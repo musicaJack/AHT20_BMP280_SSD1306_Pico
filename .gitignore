@@ -1,41 +1,91 @@
-# Prerequisites
-*.d
+# RP2040 AHT20 + BMP280 Sensor Project .gitignore
 
-# Compiled Object files
-*.slo
-*.lo
+# Build directories
+build/
+build_*/
+cmake-build-*/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+!pico_sdk_import.cmake
+
+# Ninja build files
+*.ninja
+.ninja_deps
+.ninja_log
+
+# Compiler output files
 *.o
 *.obj
+*.elf
+*.bin
+*.hex
+*.uf2
+*.map
+*.lst
+*.dep
+*.d
+*.crf
 
-# Precompiled Headers
-*.gch
-*.pch
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
 
-# Linker files
-*.ilk
+# Log files
+*.log
+JLinkLog.txt
 
-# Debugger Files
-*.pdb
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Fortran module files
-*.mod
-*.smod
+# Pico SDK specific
+pico-sdk/
+pico-examples/
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Documentation (optional - uncomment if you want to ignore PDFs)
+# *.pdf
 
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# Keil project files (STM32 related - can be ignored after cleanup)
+*.uvprojx
+*.uvoptx
+*.uvguix.*
+*.uvmpw
+*.uv2
+*.bak
+*.dep
+*.d
+*.crf
+*.o
+*.lst
+*.map
+*.hex
+*.bin
+*.elf
+*.axf
+*.htm
+*.lnp
+*.sct
+*.scvd
+*.ini
