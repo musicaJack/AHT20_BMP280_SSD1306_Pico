@@ -62,4 +62,3 @@ echo.
 REM Return to parent directory
 cd ..\..
 
-pause
